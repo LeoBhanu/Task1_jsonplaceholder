@@ -15,12 +15,9 @@ export class PostsComponent implements OnInit {
   constructor(private _data:PlaceholderService) { }
 
   ngOnInit(): void {
-
     this.getpostData();
   }
-
   
-
   getpostData(){
 this._data.getPosts().subscribe(
   (res)=>{
